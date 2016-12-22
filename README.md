@@ -26,7 +26,7 @@ You can now quickly and easily install new Sublime3 packages by:
 
 1. After  few second the dialog box will show a list of all the packages available from the online Package Control. When you start to type the name of the package you want, it will autocomplete for you. Once highlighted, press enter and it will install the package for use in Sublime3.
 
-# 3. Install Sublime3 Packages
+# 3. Install Sublime Text 3 Packages
 
 Below is a non-exhaustive list of Sublime3 packages I use regularly for Drupal development.
 Read the descriptions of each one for their exact usage.
@@ -34,11 +34,28 @@ Read the descriptions of each one for their exact usage.
 ## Drupal Specific Packages
 
 - [Drupal](https://sublime.wbond.net/packages/Drupal)
+- [Drupal Completions](https://packagecontrol.io/packages/Drupal%20Completions)
+- [Drupal Project Autocomplete](https://packagecontrol.io/packages/Drupal%20Project%20Autocomplete)
 - [Goto Drupal API](https://sublime.wbond.net/packages/Goto%20Drupal%20API)
 
 ## Theme Package
 
-- [Theme - Flatland](https://sublime.wbond.net/packages/Theme%20-%20Flatland)
+- [Theme - Materialize](https://github.com/saadq/Materialize)
+
+```json
+{
+  "color_scheme": "Packages/Materialize/schemes/Material Spacegray.tmTheme",
+  "theme": "Material Spacegray.sublime-theme",
+  "material_theme_accent_yellow": true,
+  "material_theme_bold_tab": true,
+  "material_theme_compact_panel": true,
+  "material_theme_compact_sidebar": true,
+  "material_theme_contrast_mode": true,
+  "material_theme_disable_tree_indicator": true,
+  "material_theme_small_statusbar": true,
+  "material_theme_tabs_autowidth": true,
+}
+```
 
 ## Debugging Package
 
