@@ -97,7 +97,7 @@ Be sure you add the `url` for browser debugging and `path_mapping` configuration
 - [SideBarEnhancements](https://sublime.wbond.net/packages/SideBarEnhancements)
 - [FileDiffs](https://sublime.wbond.net/packages/FileDiffs)
 
-# 4. Drupal formatting
+# 4. User Settings
 
 Configure Sublime3 formatting with common Drupal settings, such as 2 spaces for indents, an 80 character right boarder, etc:
 
@@ -158,3 +158,19 @@ Open the menu `Preferences > Settings - User` and **paste** the following and **
 	"word_wrap": true
 }
 ```
+
+# 4. User Settings
+File Open > ~/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings **paste** the following and **Save**.
+
+```json
+{
+  "extensions":
+   [
+     "inc",
+     "profile",
+     "module",
+     "install"
+   ]
+}
+```
+	
