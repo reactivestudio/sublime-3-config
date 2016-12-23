@@ -105,41 +105,56 @@ Open the menu `Preferences > Settings - User` and **paste** the following and **
 
 ```json
 {
+	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"caret_style": "wide",
-	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Materialize/schemes/Material Spacegray.tmTheme",
+	"convert_path": "/Applications/MAMP/Library/bin/convert",
 	"default_line_ending": "unix",
+	"drag_text": false,
+	"draw_indent_guides": false,
 	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"fallback_encoding": "UTF-8",
-	"show_encoding": true,
 	"find_selected_text": true,
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 12.0,
-	"highlight_line": true,
+	"font_size": 12,
+	"highlight_line": false,
 	"ignored_packages":
 	[
-		"Markdown",
 		"Vintage"
 	],
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"material_theme_accent_yellow": true,
+	"material_theme_bold_tab": true,
+	"material_theme_compact_panel": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_disable_tree_indicator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_tabs_autowidth": true,
 	"open_files_in_new_window": false,
 	"rulers":
 	[
 		80
 	],
 	"shift_tab_unindent": true,
-	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"theme": "Flatland Dark.sublime-theme",
+	"theme": "Material Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
-	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?"
+	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~_?",
+	"word_wrap": true
 }
 ```
