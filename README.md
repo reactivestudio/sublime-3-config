@@ -1,35 +1,34 @@
 # Sublime Text 3 Drupal Development Setup
 
-# 1. Install Sublime3 Text
+Optimized to use with Drupal, JavaScript, React and Material Design
+
+# 1. Getting Started
 
 Download and install [Sublime3](http://www.sublimetext.com/3) for your operating system.
 
-# 2. Install Sublime3 Package Manager
+# 2. Install Packages 
 
-The Package Manager allows for the easy installation of Sublime3 packages from [Package Control](https://sublime.wbond.net/) (the Sublime package manager).
+## Package Manager
 
-- In order to easily install these 3rd party packages, you will first need to navigate to the [Package Control installer](https://sublime.wbond.net/installation#st3) and **copy** the code underneath the Sublime3 tab, which looks like:
+In order to easily install these 3rd party packages, you will first need to navigate to the [Package Control installer](https://sublime.wbond.net/installation#st3) and **copy** the code underneath the Sublime3 tab, which looks like:
 
 ```python
 import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
-- In Sublime3, open the menu `View > Show Console` and a console will open at the bottom. **Paste** the code which you copied in the previous step and press enter. Sublime3 will then install the Package Control manager for you.
+Open the menu `View > Show Console` and a console will open at the bottom. **Paste** the code which you copied in the previous step and press enter. Sublime3 will then install the Package Control manager for you.
 
-## Using the Package Manager
+## HTML
 
-You can now quickly and easily install new Sublime3 packages by:
-
-1. Open the Command Palette using `Ctrl/Cmd + Shift + p` - a small dialog box will appear at the top of the screen.
-
-1. Start typing in the word `install` and the command `Package Control: Install Package` will appear. Hit enter or click on it.
-
-1. After  few second the dialog box will show a list of all the packages available from the online Package Control. When you start to type the name of the package you want, it will autocomplete for you. Once highlighted, press enter and it will install the package for use in Sublime3.
-
-# 3. Install Sublime Text 3 Packages
-
-Below is a non-exhaustive list of Sublime3 packages I use regularly for Drupal development.
-Read the descriptions of each one for their exact usage.
+- [Emmet](https://packagecontrol.io/packages/Emmet) - A must for working fast with HTML/CSS
+- [Tag](https://packagecontrol.io/packages/Tag) - Auto closes tags and lints for matched tags
+- [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - HTML/CSS/JavaScript formatter
+ 
+## CSS/SASS/SCSS
+- [Gutter Color](https://packagecontrol.io/packages/Gutter%20Color) - CSS colors in gutter
+- [SASS](https://packagecontrol.io/packages/SASS) - SASS syntax highlighting
+- [SCSS](https://packagecontrol.io/packages/SCSS) - SCSS syntax highlighting
+- [SASS Beautify](https://packagecontrol.io/packages/SassBeautify) - A Sublime Text plugin that beautifies Sass files
 
 ## Drupal Specific Packages
 
@@ -38,9 +37,35 @@ Read the descriptions of each one for their exact usage.
 - [Drupal Project Autocomplete](https://packagecontrol.io/packages/Drupal%20Project%20Autocomplete)
 - [Goto Drupal API](https://sublime.wbond.net/packages/Goto%20Drupal%20API)
 
+## Autocomplete
+- [All Autocomplete](https://packagecontrol.io/packages/Gutter%20Color) - CSS colors in gutter
+- [Advanced New File](https://packagecontrol.io/packages/AdvancedNewFile) - File creation plugin
+- [Auto Semi-Colon](https://packagecontrol.io/packages/Auto%20Semi-Colon) - Automatically moves a semi-colon to the outside of the last bracket when pressed inside
+- [Sublime ​Code ​Intel](https://packagecontrol.io/packages/SublimeCodeIntel) - Full-featured code intelligence and smart autocomplete engine
+
+## Coding Standards and Helpers Packages
+- [DocBlockr](https://sublime.wbond.net/packages/DocBlockr) -
+- [Alignment](https://packagecontrol.io/packages/Alignment) - Easy alignment of multiple selections and multi-line selections
+- [Bracket​ Highlighter](https://packagecontrol.io/packages/Bracket​Highlighter) - Bracket and tag highlighter
+- [Sublime​Linter](https://packagecontrol.io/packages/Sublime​Linter) - Interactive code linting framework
+- [Sublime​Linter-annotations](https://packagecontrol.io/packages/Sublime​Linter-annotations) - SublimeLinter 3 plugin that marks annotations such as TODO, FIXME, etc
+- [Trimmer](https://packagecontrol.io/packages/Trimmer) - A Sublime Text plug-in for cleaning up whitespace
+
+## Syntax Helpers
+- [Apply​Syntax](https://packagecontrol.io/packages/Apply​Syntax) - Syntax detector
+- [NGINX](https://packagecontrol.io/packages/nginx) - Improved syntax support for Nginx configuration files
+
+## Version Control
+- [Git​Savvy](https://packagecontrol.io/packages/GitSavvy) - Full git and GitHub integration
+- [Git​Gutter](https://packagecontrol.io/packages/GitGutter) - A Sublime Text 2/3 plugin to see git diff in gutter
+- [Git​Status](https://packagecontrol.io/packages/Git​Status) - Monitoring changed files and status of the repository
+
 ## Theme Package
 
 - [Theme - Materialize](https://github.com/saadq/Materialize)
+![Material Theme](https://raw.githubusercontent.com/saadq/Materialize/master/screenshots/material-spacegray.png)
+
+Open the menu `Preferences > Settings - User` and **paste** the following and **Save**
 
 ```json
 {
@@ -56,6 +81,7 @@ Read the descriptions of each one for their exact usage.
   "material_theme_tabs_autowidth": true,
 }
 ```
+Add `Material Spacegray.sublime-theme` from this repo to `~/Users/admin/Library/Application Support/Sublime Text 3/Packages/User`
 
 ## Debugging Package
 
@@ -72,36 +98,12 @@ Be sure you add the `url` for browser debugging and `path_mapping` configuration
 }
 ```
 
-## Coding Standards and Helpers Packages
-
-- [DocBlockr](https://sublime.wbond.net/packages/DocBlockr)
-- [Auto Semi-Colon](https://sublime.wbond.net/packages/Auto%20Semi-Colon)
-- [BracketHighlighter](https://sublime.wbond.net/packages/BracketHighlighter)
-- [SublimeCodeIntel](https://sublime.wbond.net/packages/SublimeCodeIntel)
-- [TrailingSpaces](https://sublime.wbond.net/packages/TrailingSpaces)
-- [Trimmer](https://sublime.wbond.net/packages/Trimmer)
-- [CSScomb](https://sublime.wbond.net/packages/CSScomb)
-- [SublimeLinter](https://sublime.wbond.net/packages/SublimeLinter)
-  - [SublimeLinter-php](https://sublime.wbond.net/packages/SublimeLinter-php)
-  - [SublimeLinter-jshint](https://sublime.wbond.net/packages/SublimeLinter-jshint)
-  - [SublimeLinter-json](https://sublime.wbond.net/packages/SublimeLinter-json)
-- [SublimeLinter-csslint](https://sublime.wbond.net/packages/SublimeLinter-csslint)
-- [Emmet](https://sublime.wbond.net/packages/Emmet)
-- [Terminal](https://packagecontrol.io/packages/Terminal)
-- [MarkdownPreview](https://packagecontrol.io/packages/Markdown%20Preview)
-- [MarkdownEditing](https://packagecontrol.io/packages/MarkdownEditing)
-
-## Other Packages
-
-- [GitGutter](https://sublime.wbond.net/packages/GitGutter) (disable when using XDebug)
-- [SideBarEnhancements](https://sublime.wbond.net/packages/SideBarEnhancements)
-- [FileDiffs](https://sublime.wbond.net/packages/FileDiffs)
 
 # 4. User Settings
 
 Configure Sublime3 formatting with common Drupal settings, such as 2 spaces for indents, an 80 character right boarder, etc:
 
-Open the menu `Preferences > Settings - User` and **paste** the following and **Save**.
+Open the menu `Preferences > Settings - User` and **paste** the following and **Save**
 
 ```json
 {
@@ -159,8 +161,10 @@ Open the menu `Preferences > Settings - User` and **paste** the following and **
 }
 ```
 
+
+
 # 5. Drupal PHP Settings
-File Open > ~/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings **paste** the following and **Save**.
+Open `~/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings` **paste** the following and **Save**.
 
 ```json
 {
