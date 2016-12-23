@@ -159,7 +159,7 @@ Open the menu `Preferences > Settings - User` and **paste** the following and **
 }
 ```
 
-# 4. User Settings
+# 5. Drupal PHP Settings
 File Open > ~/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings **paste** the following and **Save**.
 
 ```json
